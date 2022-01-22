@@ -1,5 +1,6 @@
 # NASAgram Backend 
-This is the backend repo for NASAgram: https://github.com/huiwen12/NASAgram.
+This is the backend repo for NASAgram: https://github.com/huiwen12/NASAgram. To view the project, both repos must run simultaneously on your local host by executing
+### `npm run dev`
 
 ### Running the project
 
