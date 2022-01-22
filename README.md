@@ -1,8 +1,5 @@
-# DEV Bootcamp Backend Starter
-
-### Getting Started
-
-To start your project built off of this repository, click the **Fork** button in the top right of the github GUI. This will create a copy of this repository under your account. Share this repository with your team members so that everyone may work off of it.
+# NASAgram Backend 
+This is the backend repo for NASAgram: https://github.com/huiwen12/NASAgram.
 
 ### Running the project
 
@@ -110,29 +107,3 @@ project-repo-name
 
   - This is where all the Objection models are kept. Make sure to keep this in sync with any changes to the migrations.
 
-## Set up a development environment
-
-- To make development easier, we will use ElephantSQL's free plan to host a different database in the cloud for each engineer. It is always on and never fails so your computer stays free.
-
-  - Sign up for a free personal account [here](https://customer.elephantsql.com/login). There is also a log in with Github option.
-  - Once you have signed in, click the **Create New Instance** button on the top right.
-  - Add a name, probably something like `app-name-db` and keep it on the free `Tiny Turtle` plan. You shouldn't need to add any payment information! Press **Select Region**.
-  - Select the `US-East-1` as the region and press **Review**. and then **Create Instance**.
-  - This should take you back to your list of your created instances (databases). Click on the one you just made.
-  - Under the Details section you should see **Server**, **User & Default database**, and **Password**. These are the credentials you need to connect to the database.
-
-* Connect to the database
-
-  - Run `cp sample.env .env` in your terminal to create the .env file.
-  - Add all the credentials from ElephantSQL to the corresponding fields in the .env file. It should probably end up looking something like this:
-    <br />
-    <br />
-
-  ```
-  DB_HOST=salt.db.elephantsql.com
-  DB_DATABASE=abcdefgh
-  DB_USER=abcdefgh
-  DB_PASSWORD=abcdefghabcdefghabcdefghabcdefgh
-  DB_PORT=5432
-  NODE_ENV=development
-  ```
