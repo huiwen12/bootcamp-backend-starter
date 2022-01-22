@@ -9,7 +9,9 @@ module.exports = async ({ req, res }) => {
       req, res,
     })
   }
+  // console.log(req.headers.authorization)
   if (!req.headers.authorization) {
+    // console.log('hello')
     // No JWT present for auth
     return ({
       req,
@@ -18,10 +20,12 @@ module.exports = async ({ req, res }) => {
   }
 
   try {
+    console.log(decodeToken(req.headers.authorization))
     const {
       id,
     } = decodeToken(req.headers.authorization)
     const user = await User.query().findById(id)
+    // console.log(user)
     return ({
       req,
       res,
@@ -29,6 +33,7 @@ module.exports = async ({ req, res }) => {
     })
     // If failed context creation, make unathenticated request
   } catch (error) {
+    // console.log(error)
     return ({
       req, res,
     })

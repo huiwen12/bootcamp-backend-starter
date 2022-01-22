@@ -4,7 +4,12 @@ const {
   hashPassword, comparePassword, createToken,
 } = require('../../lib/auth')
 
-
+// can validate credential using context by adding a query to check the token in context
+// add context after the parameters email and password in const login
+// if !context
+// throw error('Invalid Token')
+// frontend check if the mutation returns invalid token and push to frontend
+// can add query to check the authentication one very render page
 const login = async (obj, { email, password }) => {
   const user = await User.query().findOne({
     email,

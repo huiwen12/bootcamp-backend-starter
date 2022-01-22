@@ -7,7 +7,7 @@ module.exports = {
 
   db: {
     max_connections: Number.isNaN(Number(process.env.DB_MAX_CONNECTIONS))
-      ? 10
+      ? 50
       : Number(process.env.DB_MAX_CONNECTIONS),
     host: process.env.DB_HOST,
     port: process.env.DB_PORT,
