@@ -5,12 +5,13 @@ module.exports = gql`
     login(email: String!, password: String!): AuthReturn!
     register(input: RegisterInput!): AuthReturn!
 
+    updateUser(email: String!, input: String!): User!
   }
 
   type Query {
     welcome: String!
     likedPost(id: ID!): [Post]
-    numLikes(input: ID!): Likes
+    numLikes(input:ID! ): Likes
     checkToken: String!
   }
 
