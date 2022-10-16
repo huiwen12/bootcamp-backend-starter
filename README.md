@@ -2,16 +2,6 @@
 This is the backend repo for NASAgram, a full-stack project (React, GraphQL/Apollo, Node.js, PostgreSQL) that utilitzes NASA Astronomy Picture of the Day API to generate a Instagram-like space photo app: https://github.com/huiwen12/NASAgram. To view the project, both repos must run simultaneously on your local host by executing
 ### `npm run dev`
 
-### Progress Update
-The development of NASAgram is still in progress, and I will be adding more functionality and styling to the app. A video demo of the current status of the app can be accessed at https://harvard.zoom.us/rec/play/wznln_G0vPXDYBUTr1wB55PfNycV9jR1IfuMl45p5z1JT_AIUA-nuQQ8JoNvHAhIpTdvD22fTwJJSg.1jBElWPCLBZNU79E?autoplay=true&startTime=1642900804000.
-
-
-What I look forward to adding:
-- include a mutation to save each user's liked posts to the backend database in the table called "likes"
-- implement the Favorites page to display the user's liked posts and filter liked posts by the date listed on each astronomy picture of the day post
-- add the register page on the frontend
-- allow users to change their passwords
-
 ### Running the project
 
 Make sure necessary environment variables have been set, which includes the DB credentials. To create an ElephantSQL database and access the required credentials, see the section on [setting up the development environment](#Set-up-a-development-environment).
